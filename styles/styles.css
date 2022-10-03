@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Text styles */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 20px;
+    background-color: #F4F6FC;
+    color: #292E47;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.bodyMedium {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.headline {
+    font-size: 17px;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.caption1 {
+    font-size: 15px;
+}
+
+.caption2 {
+    font-size: 13px;
+}
+
+
+/*Elements*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 8%;
+}
+
+ul {
+    padding: 0px;
+    display: flex;
+    gap: 60px;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul li:hover {
+    color: #072AC8;
+}
+
+nav ul li {
+    color: #6B708D;
+}
+
+.button {
+    background-color: #072AC8;
+    padding: 15px 37px;
+    color: white;
+    border: none;
+}
+
+.active {
+    color: #0082f3;
+
+}
+
+a {
+    color: #072AC8;
+    border: none;
+    padding: 15px 37px;
+
+}
+
+.hero a {
+    color: #6B708D;
+
+}
+
+div .img {
+    background-image: url(../project-assets/hero-section/hero-image.png);
+}
+
+.hero > div {
+    width: 50%;
+}
+
+section {
+    display: flex;
+    margin-bottom: 200px;
+    padding: 0 8%;
+    max-width: 1320px}
+
+.hero {
+    height: 650px;
+}
+.hero .more{
+    display: flex;
+    flex-direction: row;
+} 
+
+.more {
+width: 100%;
+}
+
+.logos {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos img {
+    height: 96px;
+    width: 150px;
+}
+
+.projects {
+    height: 561px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.services div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    background-color: #292E47;
+    justify-content: space-around;
+}
+
+.clients h3 {
+    color: white;
+    height: 622px;
+}
+
+mark {
+    color: #FFC600;
+    background-color: transparent;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+}
+
+.services div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFC600;
+    height: 500px;
+}
+
+article {
+    background-color: white;
+    width: 340px;
+    padding: 30px;
+}
+
+.newsletter {
+    background-color: white;
+    padding: 15px 37px;
+    align-content: center;
+
+}
+
+input {
+    border: none;
+
+
+}
