@@ -101,12 +101,32 @@ a {
     color: #6B708D;
 
 }
-
-div .img {
-    background-image: url(../project-assets/hero-section/hero-image.png);
+.fotosHero{
+    width: 560px;
+    flex-direction: column;
+}
+.mainCard{
+    position: relative;
+    width: 560px;   
+}
+.card1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 
-.hero > div {
+.card2{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+img .img{
+    width: 17%;
+
+}
+
+.hero div {
     width: 50%;
 }
 
