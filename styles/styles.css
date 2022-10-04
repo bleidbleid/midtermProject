@@ -164,7 +164,7 @@ section {
 
 #card1 {
     position: absolute;
-    left: -40px;
+    left: -80px;
     top: 30px;
     width: 357px;
 }
@@ -172,7 +172,7 @@ section {
 #card2 {
     position: absolute;
     right: -80px;
-    bottom: -180px;
+    bottom: -100px;
     width: 357px;
 }
 
@@ -269,7 +269,6 @@ article img {
 }
 
 
-/* overflow hidden */
 
 /* Clients */
 
@@ -282,67 +281,191 @@ article img {
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    position: relative;
 }
 
 .clients h3 {
     color: white;
 }
 
-.clients p {
+.clients .bodyMedium {
     color: #FFC600;
-    margin: 0px 221px;
+    margin: 0px 220px;
+}
+
+.clients .headline {
+    color: #A2D6F9;
+}
+
+.clients .caption2 {
+    color: #F4F6FC;
+}
+
+.clientInfo {
+    display: flex;
+    justify-content: center;
+}
+
+.clientText {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+}
+
+.clientText p {
+    margin: 0;
+    padding-left: 16px;
+    text-align: left;
 }
 
 .client {
     width: 50px;
-    border-radius: 50%;
-    aspect-ratio: 1;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.client img {
+    height: 50px;
+}
+
+#memo1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 53px 0px 0px 106px;
+}
+
+#memo1 img {
+    width: 150px;
+    height: 150px;
+}
+
+#memo2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 53px 106px 0px 0px;
+}
+
+#memo2 img {
+    width: 150px;
+    height: 150px;
+}
+
+#memo3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0px 0px 53px 106px;
+}
+
+#memo3 img {
+    width: 150px;
+    height: 150px;
+}
+
+#memo4 img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0px 106px 53px 0px;
+
+}
+
+#memo4 img {
+    width: 150px;
+    height: 150px;
 }
 
 /* Services */
-.services div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 40px;
-
-}
-
 .services {
+    height: 561px;
     display: flex;
     flex-direction: column;
+    max-width: 1320px;
+
 }
 
-.services div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.servGrid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
 }
+
+.proj {
+    width: 40px;
+    height: 40px;
+    border-radius: 80px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ECF7FF;
+    margin: 40px 0px 0px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.proj img {
+    height: 50px;
+}
+
 
 /* Questions */
 .questions {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #FFC600;
     height: 500px;
+    max-width: 100%;
+    margin-top: 60px;
+}
+
+.questions form {
+    margin-top: 40px;
+    display: flex;
+    
+}
+.questions h3 {
+    margin: 0px;
+}
+
+.questions p {
+    color: #6B708D;
+}
+.questions .button {
+    color: #F4F6FC;
+    height: 80px;
 }
 
 
-
 .newsletter {
+    display: flex;
     background-color: white;
     padding: 15px 37px;
     align-content: center;
+    /* justify-content: center; */
 }
 
 input {
     border: none;
+    padding: 16px;
+    color: #292E47;
+
 }
-
-
 
 /* responsive */
 @media screen and (max-width: 991px) {
+    section {
+        padding: 0px 30px;
+    }
 
     nav,
     header button {
@@ -397,14 +520,9 @@ input {
     }
 
     #card1 {
-        right: 400px;
-        top: 620px;
+        left: -100px;
     }
 
-    #card2 {
-        right: 0px;
-        bottom: -220px;
-    }
 
     .more {
         text-align: center;
@@ -436,17 +554,43 @@ input {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
     }
+
+    /* Clients */
+    #memo1, #memo2, #memo3, #memo4 {
+        visibility: hidden;
+    }
+    .clients .bodyMedium {
+        margin: 0px 64px;
+    }
+
+    /* Services */
+    .services {
+        height: fit-content;
+    }
+
+    .servGrid {
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
 }
 
 
 @media screen and (max-width: 767px) {
-    .projGrid {
+    .projGrid, .servGrid {
         max-width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
 
-    .projGrid article {
+    .projGrid article, .servGrid article {
         max-width: 100%;
+    }
+
+    /* Questions */
+    .questions form {
+        flex-direction: column;
+        gap: 16px;
+        width: 500px;
     }
 }
