@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Circle Agency</title>
 </head>
 
 <body>
     <header class="topnav" id="myTopnav">
-        <a> <img src="./midtermProject/project-assets/logos/circle.svg" alt=""></a>
+        <a> <img src="./project-assets/logos/circle.svg" alt=""></a>
 
         <nav>
-            <a href="#news" class="active">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a href="#news" class="active">Home</a>
+            <a href="#contact" class="headline medium">Projects</a>
+            <a href="#about" class="headline medium">Services</a>
         </nav>
 
         <a href="#about"> <button class="headline medium button">Contact Us</button></a>
 
-        <a href="javascript:void(0);" class="icon">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </header>
@@ -34,39 +35,60 @@
                 <a class="headline medium">See our work</a>
                 <button class="headline medium button">Get in touch</button>
             </div>
-
         </div>
 
         <div class="fotosHero">
+            <!-- no se com posar les imatges petites SOS -->
             <img class="mainCard" src="./project-assets/hero-section/hero-image.png" alt="">
-            <img class="card1" src="./project-assets/hero-section/card-1.png" alt="">
-            <img class="card2" src="./project-assets/hero-section/card-2.png" alt="">
+            <!-- <img id="card1" src="./project-assets/hero-section/card-1.png" alt="">
+            <img id="card2" src="./project-assets/hero-section/card-2.png" alt=""> -->
         </div>
     </section>
     <section class="logos">
-        <img src="./project-assets/logos/airbnb-logo.svg" alt="">
-        <img src="./project-assets/logos/google-logo.svg" alt="">
-        <img src="./project-assets/logos/microsoft-logo.svg" alt="">
-        <img src="./project-assets/logos/fedex-logo.svg" alt="">
-        <img src="./project-assets/logos/amazon-logo.svg" alt="">
+        <div> <img class="logo" id="airbnb" src="./project-assets/logos/airbnb-logo.svg" alt="">
+        </div>
+        <div> <img class="logo" id="google" src="./project-assets/logos/google-logo.svg" alt="">
+        </div>
+        <div> <img class="logo" id="microsoft" src="./project-assets/logos/microsoft-logo.svg" alt="">
+        </div>
+        <div> <img class="logo" id="fedex" src="./project-assets/logos/fedex-logo.svg" alt="">
+        </div>
+        <div> <img class="logo" id="amazon" src="./project-assets/logos/amazon-logo.svg" alt="">
+        </div>
     </section>
     <section class="projects">
         <h3>Recent Projects</h3>
-        <div>
+        <div class="projGrid">
+            <!-- no tots son de la mateixa alçada SOS -->
+
+            <!-- les fotos estan deformant-se -->
+
             <article>
-                <h4>Simplify</h4>
-                <p>UI Design & App Development</p>
-                <a class="headline medium">Learn More</a>
+                <img src="./project-assets/projects-section/1.jpg" alt="">
+                <div>
+                    <h4>Simplify</h4>
+                    <p class="headline">UI Design & App Development</p>
+                    <a class="headline medium">Learn More</a>
+                </div>
+
             </article>
             <article>
-                <h4>Dashcoin</h4>
-                <p>Web Development</p>
-                <a class="headline medium">Learn More</a>
+                <img src="./project-assets/projects-section/2.jpg" alt="">
+                <div>
+                    <h4>Dashcoin</h4>
+                    <p class="headline">Web Development</p>
+                    <a class="headline medium">Learn More</a>
+                </div>
+
             </article>
             <article>
-                <h4>Vectorify</h4>
-                <p>User Experience Design</p>
-                <a class="headline medium">Learn More</a>
+                <img src="./project-assets/projects-section/3.jpg" alt="">
+                <div>
+                    <h4>Vectorify</h4>
+                    <p class="headline">User Experience Design</p>
+                    <a class="headline medium">Learn More</a>
+                </div>
+
             </article>
         </div>
 
@@ -83,19 +105,19 @@
                 <img src="" alt="">
                 <h4>User Interface Design</h4>
                 <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-                <a class="headline medium">Learn More</a>
+                <a class="headline">Learn More</a>
             </article>
             <article>
                 <img src="" alt="">
                 <h4>User Experience Design</h4>
                 <p>Circle always focuses on delivering the best user experience to your customers.</p>
-                <a class="headline medium ">Learn More</a>
+                <a class="headline">Learn More</a>
             </article>
             <article>
                 <img src="" alt="">
                 <h4>Application Development</h4>
                 <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-                <a class="headline medium ">Learn More</a>
+                <a class="headline">Learn More</a>
             </article>
         </div>
 
