@@ -113,7 +113,7 @@ nav a {
 a {
     color: #072AC8;
     border: none;
-    padding: 15px 15px 37px 0px;
+    padding-right: 37px;
 
 }
 
@@ -124,12 +124,10 @@ section {
     max-width: 1320px
 }
 
-.hero {
-    height: 650px;
-}
-
 .hero a {
     color: #6B708D;
+    display: flex;
+    align-items: center;
 }
 
 .hero p {
@@ -137,19 +135,18 @@ section {
     padding-right: 35px;
 }
 
-.hero div {
-    width: 50%;
-    margin-top: 70px;
 
-}
-
-.hero .more {
+.heroInfo,
+.fotosHero {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .more {
     width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -157,24 +154,25 @@ section {
     width: 560px;
     flex-direction: column;
     text-align: center;
+    position: relative;
+
 }
 
 .mainCard {
-    position: relative;
     width: 560px;
 }
 
 #card1 {
     position: absolute;
-    right: 450px;
-    top: 120px;
+    left: -40px;
+    top: 30px;
     width: 357px;
 }
 
 #card2 {
     position: absolute;
-    right: 0px;
-    bottom: -220px;
+    right: -80px;
+    bottom: -180px;
     width: 357px;
 }
 
@@ -193,6 +191,8 @@ img .img {
     grid-row-gap: 16px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
+    margin: 0px;
+    text-align: center;
 }
 
 .logo {
@@ -253,13 +253,13 @@ img .img {
 article {
     background-color: white;
     max-width: 340px;
-    
+
 }
 
 article div {
     padding: 30px;
     height: 100%;
-    
+
 
 }
 
@@ -269,7 +269,7 @@ article img {
 }
 
 
-
+/* overflow hidden */
 
 /* Clients */
 
@@ -277,17 +277,26 @@ article img {
     display: flex;
     flex-direction: column;
     background-color: #292E47;
+    display: flex;
+    height: 622px;
+    align-items: center;
     justify-content: space-around;
+    text-align: center;
 }
 
 .clients h3 {
     color: white;
-    height: 622px;
 }
 
-mark {
+.clients p {
     color: #FFC600;
-    background-color: transparent;
+    margin: 0px 221px;
+}
+
+.client {
+    width: 50px;
+    border-radius: 50%;
+    aspect-ratio: 1;
 }
 
 /* Services */
@@ -369,7 +378,7 @@ input {
         height: fit-content;
     }
 
-    .hero div {
+    .heroInfo {
         width: 100%;
         justify-content: center;
         display: flex;
@@ -397,6 +406,12 @@ input {
         bottom: -220px;
     }
 
+    .more {
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     /* Logos */
 
     div #amazon {
@@ -415,6 +430,7 @@ input {
     .projects {
         height: fit-content;
     }
+
     .projGrid {
         max-width: 100%;
         grid-template-columns: 1fr 1fr;
@@ -429,6 +445,7 @@ input {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+
     .projGrid article {
         max-width: 100%;
     }
