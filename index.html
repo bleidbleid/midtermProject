@@ -16,12 +16,12 @@
         <a> <img src="./project-assets/logos/circle.svg" alt=""></a>
 
         <nav>
-            <a href="#news" class="active">Home</a>
-            <a href="#contact" class="headline medium">Projects</a>
-            <a href="#about" class="headline medium">Services</a>
+            <a href="#news" class="active medium">Home</a>
+            <a href="./project.html" class="headline medium">Projects</a>
+            <a href="./services.html" class="headline medium">Services</a>
         </nav>
 
-        <a href="#about"> <button class="headline medium button">Contact Us</button></a>
+        <a href="#about"> <button class="headline button">Contact Us</button></a>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -36,12 +36,12 @@
                 apps.</p>
             <div class="more">
                 <a class="headline medium">See our work</a>
-                <button class="headline medium button">Get in touch</button>
+                <button class="headline button">Get in touch</button>
             </div>
         </div>
 
+        <!-- No se per què al fer-ho responsive queda justificat a l'esquerra -->
         <div class="fotosHero">
-            <!-- m'ingora el top:32px SOS -->
             <img class="mainCard" src="./project-assets/hero-section/hero-image.png" alt="">
             <img id="card1" src="./project-assets/hero-section/card-1.png" alt="">
             <img id="card2" src="./project-assets/hero-section/card-2.png" alt="">
@@ -64,36 +64,35 @@
     <section class="projects">
         <h3>Recent Projects</h3>
         <div class="projGrid">
-            <!-- no tots son de la mateixa alçada SOS -->
-
             <!-- les fotos estan deformant-se -->
 
             <article>
                 <img src="./project-assets/projects-section/1.jpg" alt="">
-                <div>
+                <div class="descripcionCard">
                     <h4>Simplify</h4>
                     <p class="headline">UI Design & App Development</p>
-                    <a class="headline medium">Learn More</a>
                 </div>
-
+                <a class="headline medium learnMore">Learn More</a>
             </article>
+            
             <article>
                 <img src="./project-assets/projects-section/2.jpg" alt="">
-                <div>
+                <div class="descripcionCard">
                     <h4>Dashcoin</h4>
                     <p class="headline">Web Development</p>
-                    <a class="headline medium">Learn More</a>
                 </div>
-
+                <a class="headline medium learnMore">Learn More</a>
             </article>
+
             <article>
                 <img src="./project-assets/projects-section/3.jpg" alt="">
                 <div>
                     <h4>Vectorify</h4>
                     <p class="headline">User Experience Design</p>
-                    <a class="headline medium">Learn More</a>
                 </div>
+                <a class="headline medium">Learn More</a>
             </article>
+
         </div>
     </section>
 
@@ -119,11 +118,11 @@
         <div id="memo2">
             <img src="./project-assets/testimonial-section/memoji-4.png" alt="">
         </div>
-        
+
         <div id="memo3">
             <img src="./project-assets/testimonial-section/memoji-3.png" alt="">
         </div>
-        
+
         <div id="memo4">
             <img src="./project-assets/testimonial-section/memoji-2.png" alt="">
         </div>
@@ -142,9 +141,10 @@
                 <div class="proj">
                     <img src="./project-assets/services-section/icons/1.svg" alt="">
                 </div>
-                <div >
+                <div>
                     <h4>User Interface Design</h4>
-                    <p class="headline">Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                    <p class="headline">Circle provides you with a stunning user interface design that is accessible to
+                        everyone.</p>
                     <a class="headline medium">Learn More</a>
                 </div>
 
@@ -153,9 +153,10 @@
                 <div class="proj">
                     <img src="./project-assets/services-section/icons/2.svg" alt="">
                 </div>
-                <div >
+                <div>
                     <h4>User Experience Design</h4>
-                    <p class="headline">Circle always focuses on delivering the best user experience to your customers.</p>
+                    <p class="headline">Circle always focuses on delivering the best user experience to your customers.
+                    </p>
                     <a class="headline medium">Learn More</a>
                 </div>
 
@@ -166,7 +167,8 @@
                 </div>
                 <div>
                     <h4>Application Development</h4>
-                    <p class="headline">We develop high-quality mobile and web applications using the latest technology stack.</p>
+                    <p class="headline">We develop high-quality mobile and web applications using the latest technology
+                        stack.</p>
                     <a class="headline medium">Learn More</a>
                 </div>
             </article>
@@ -176,7 +178,7 @@
 
     <!-- QUESTIONS -->
     <section class="questions">
-    
+
         <h3>Do you have any questions?</h3>
         <p class="headline">Let us help you!</p>
         <form action="">
@@ -190,6 +192,33 @@
 
     <!-- FOOTER -->
     <footer>
+        <div class="adress">
+            <div class="circle">
+            </div>
+            <p class="headline">2972 Westheimer Rd. Santa Ana, <br>Illinois 85486</p>
+
+        </div>
+        <div class="footerLinks">
+            <div>
+                <a class="headline" href="">Team</a>
+            </div>
+            <div>
+                <a class="headline" href="">Services</a>
+            </div>
+            <div>
+                <a class="headline" href="">About Us</a>
+            </div>
+            <div>
+                <a class="headline" href="">Press</a>
+            </div>
+            <div>
+                <a class="headline" href="">Projects</a>
+            </div>
+            <div>
+                <!-- No sé perquè no s'alinea a l'esquerra com els altres -->
+                <a class="headline" href="">Privacy Policy</a>
+            </div>
+        </div>
 
     </footer>
     <script src="./js/index.js"></script>

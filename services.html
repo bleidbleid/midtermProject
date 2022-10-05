@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/services.css">
+
+    <title>Circle Agency</title>
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+    <header class="topnav" id="myTopnav">
+        <a> <img src="./project-assets/logos/circle.svg" alt=""></a>
+
+        <nav>
+            <a href="./index.html" class="headline medium">Home</a>
+            <a href="./project.html" class="headline medium">Projects</a>
+            <a href="./services.html" class="active medium">Services</a>
+        </nav>
+
+        <a href="#about"> <button class="headline button">Contact Us</button></a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+
+    <!-- FORM -->
+    <section class="form">
+        <h1>Contact Us</h1>
+        <form action="">
+            <div class="name">
+                <label class="headline" for="name">Full Name *</label>
+                <input class="caption1" type="text" placeholder="Enter your full name">
+            </div>
+            <div class="optional">
+                <div class="email">
+                    <label class="headline" for="email">Email</label>
+                    <input class="caption1" type="text" placeholder="Enter your email address">
+                </div>
+                <div class="phone">
+                    <label class="headline" for="phone">Phone</label>
+                    <input class="caption1" type="text" placeholder="Enter your phone number">
+                </div>
+            </div>
+            <div class="message">
+                <label class="headline" for="message">Message</label>
+                <textarea class="caption1" name="message" placeholder="Write your message here ...."></textarea>
+            </div>
+            <input class="submit" type="submit" value="Submit">
+
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="adress">
+            <div class="circle">
+            </div>
+            <p class="headline">2972 Westheimer Rd. Santa Ana, <br>Illinois 85486</p>
+
+        </div>
+        <div class="footerLinks">
+            <div>
+                <a class="headline" href="">Team</a>
+            </div>
+            <div>
+                <a class="headline" href="">Services</a>
+            </div>
+            <div>
+                <a class="headline" href="">About Us</a>
+            </div>
+            <div>
+                <a class="headline" href="">Press</a>
+            </div>
+            <div>
+                <a class="headline" href="">Projects</a>
+            </div>
+            <div>
+                <!-- No sé perquè no s'alinea a l'esquerra com els altres -->
+                <a class="headline" href="">Privacy Policy</a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

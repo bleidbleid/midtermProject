@@ -1,0 +1,14 @@
+/* MAIN PROJECT*/
+.main {
+    flex-direction: column;
+}
+
+ .projectHeader {
+    padding: none;
+}
+
+.mainText {
+    color: #6B708D;
+}
+
+ 

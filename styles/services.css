@@ -1,0 +1,59 @@
+/* FORM */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+label,
+.optional {
+    width: 100%;
+}
+
+.optional {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+}
+
+input,
+textarea {
+    background-color: rgba(107, 112, 131, 10%);
+    border: none;
+}
+
+textarea {
+    padding: 16px;
+    height: 200px;
+}
+
+.email,
+.phone,
+.name,
+.message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.submit {
+    background-color: #072AC8;
+    padding: 15px 37px;
+    color: white;
+    border: none;
+    height: 80px;
+}
+
+@media screen and (max-width: 991px) {
+    .optional {
+        flex-direction: column;
+
+    }
+}
