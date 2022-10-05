@@ -11,21 +11,19 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header class="topnav" id="myTopnav">
-        <a> <img src="./project-assets/logos/circle.svg" alt=""></a>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a id="circle" href="#home"><img src="./project-assets/logos/circle.svg" alt=""></a>
+            <nav><a href="#" class="active">Home</a>
+                <a href="./project.html">Projects</a>
+                <a href="./services.html">Services</a>
+            </nav>
+            <a href="#contact"> <button class="headline button">Contact Us</button></a>
 
-        <nav>
-            <a href="#news" class="active medium">Home</a>
-            <a href="./project.html" class="headline medium">Projects</a>
-            <a href="./services.html" class="headline medium">Services</a>
-        </nav>
-
-        <a href="#about"> <button class="headline button">Contact Us</button></a>
-
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
 
     <!-- HERO -->
@@ -68,29 +66,29 @@
 
             <article>
                 <img src="./project-assets/projects-section/1.jpg" alt="">
-                <div class="descripcionCard">
-                    <h4>Simplify</h4>
-                    <p class="headline">UI Design & App Development</p>
+                <div class="descripcionCard" id="descriptionCard1">
+                    <!-- <h4>Simplify</h4>
+                    <p class="headline">UI Design & App Development</p> -->
                 </div>
                 <a class="headline medium learnMore">Learn More</a>
             </article>
-            
+
             <article>
                 <img src="./project-assets/projects-section/2.jpg" alt="">
-                <div class="descripcionCard">
-                    <h4>Dashcoin</h4>
-                    <p class="headline">Web Development</p>
+                <div class="descripcionCard" id="descriptionCard2">
+                    <!-- <h4>Dashcoin</h4>
+                    <p class="headline">Web Development</p> -->
                 </div>
                 <a class="headline medium learnMore">Learn More</a>
             </article>
 
             <article>
                 <img src="./project-assets/projects-section/3.jpg" alt="">
-                <div>
-                    <h4>Vectorify</h4>
-                    <p class="headline">User Experience Design</p>
+                <div class="descripcionCard" id="descriptionCard3">
+                    <!-- <h4>Vectorify</h4>
+                    <p class="headline">User Experience Design</p> -->
                 </div>
-                <a class="headline medium">Learn More</a>
+                <a class="headline medium learnMore">Learn More</a>
             </article>
 
         </div>
@@ -184,7 +182,7 @@
         <form action="">
             <span class="newsletter">
                 <img src="./project-assets/newsletter/icon/mail.svg" alt="">
-                <input class="headline" type="email" placeholder="Enter your email">
+                <input class="headline" type="email" placeholder="Enter your email" required>
             </span>
             <button class="headline button">Suscribe</button>
         </form>

@@ -35,11 +35,12 @@
     <!-- FORM -->
     <section class="form">
         <h1>Contact Us</h1>
-        <form action="">
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
             <div class="name">
-                <label class="headline" for="name">Full Name *</label>
-                <input class="caption1" type="text" placeholder="Enter your full name">
+                <label class="headline" for="name" name="fname">Full Name *</label>
+                <input class="caption1" type="text" placeholder="Enter your full name" required>
             </div>
+            
             <div class="optional">
                 <div class="email">
                     <label class="headline" for="email">Email</label>
