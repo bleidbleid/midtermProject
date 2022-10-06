@@ -1,3 +1,39 @@
+
+/* Services */
+.services {
+    height: 561px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1320px;
+
+}
+
+.servGrid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.proj {
+    width: 40px;
+    height: 40px;
+    border-radius: 80px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ECF7FF;
+    margin: 40px 0px 0px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.proj img {
+    height: 50px;
+}
+
 /* FORM */
 .form {
     display: flex;
@@ -60,4 +96,18 @@ textarea {
         flex-direction: column;
 
     }
+
+    /* Services */
+    .services {
+        height: fit-content;
+    }
+
+    .servGrid {
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
 }

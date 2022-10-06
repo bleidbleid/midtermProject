@@ -1,0 +1,130 @@
+/* Clients */
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    background-color: #292E47;
+    background-image: url(../project-assets/testimonial-section/orbit.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 622px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+}
+
+.clients h3 {
+    color: white;
+}
+
+.clients .bodyMedium {
+    color: #FFC600;
+    margin: 0px 220px;
+}
+
+.clients .headline {
+    color: #A2D6F9;
+}
+
+.clients .caption2 {
+    color: #F4F6FC;
+}
+
+.clientInfo {
+    display: flex;
+    justify-content: center;
+}
+
+.clientText {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+}
+
+.clientText p {
+    margin: 0;
+    padding-left: 16px;
+    text-align: left;
+}
+
+.client {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.client img {
+    height: 50px;
+}
+
+#memo1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 53px 0px 0px 106px;
+}
+
+#memo1 img {
+    width: 150px;
+    height: 150px;
+}
+
+#memo2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 53px 106px 0px 0px;
+}
+
+#memo2 img {
+    width: 150px;
+    height: 150px;
+}
+
+#memo3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0px 0px 53px 106px;
+}
+
+#memo3 img {
+    width: 150px;
+    height: 150px;
+}
+
+#memo4 img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0px 106px 53px 0px;
+
+}
+
+#memo4 img {
+    width: 150px;
+    height: 150px;
+}
+
+@media screen and (max-width: 991px) {
+ /* Clients */
+ #memo1,
+ #memo2,
+ #memo3,
+ #memo4 {
+     visibility: hidden;
+ }
+
+ .clients .bodyMedium {
+     margin: 0px 64px;
+ }
+}
+

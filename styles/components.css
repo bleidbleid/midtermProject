@@ -1,0 +1,21 @@
+.button {
+    background-color: #072AC8;
+    padding: 15px 37px;
+    color: white;
+    border: none;
+}
+
+.button:hover {
+    background-color: #292E47;
+}
+
+.active {
+    color: #0082f3;
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 767px) {
+}

@@ -1,0 +1,61 @@
+/* Logos */
+.logos {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0px;
+    text-align: center;
+}
+
+.logo {
+    max-height: 96px;
+    max-width: 150px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.logos div {
+    height: 96px;
+    width: 150px;
+}
+
+#airbnb {
+    width: 102.67px;
+}
+
+#google {
+    width: 96px;
+}
+
+#microsoft {
+    width: 123px;
+}
+
+#fedex {
+    width: 99.88px;
+}
+
+#amazon {
+    width: 104px;
+}
+
+@media screen and (max-width: 991px) {
+/* Logos */
+
+div #amazon {
+    visibility: hidden;
+}
+
+.logos {
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+}
