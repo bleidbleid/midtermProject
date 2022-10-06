@@ -38,12 +38,15 @@ const getData = async () => {
     //obtenir el nom i la descripció
     const data = await response.json();
     console.log(data);
-    projectName = data.title;
-    projectText = data.body;
+    projectName = (data.title).slice(0,15);
+    projectText = (data.body). slice(0,100);
     getMyProject(projectName, projectText, id);
     
   }
 }
+
+
+
 getData();
 //col·locar al info al HTML
 
