@@ -9,7 +9,14 @@
 @import url(./footer.css);
 @import url(./logos.css);
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1320px;
+    
 
+}
 /* responsive */
 @media screen and (max-width: 991px) {
     section {

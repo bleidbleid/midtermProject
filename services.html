@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/services.css">
 
     <title>Circle Agency</title>
 </head>
@@ -17,15 +16,11 @@
 
     <!-- HEADER -->
     <header class="topnav" id="myTopnav">
-        <a> <img src="./project-assets/logos/circle.svg" alt=""></a>
-
-        <nav>
-            <a href="./index.html" class="headline medium">Home</a>
-            <a href="./project.html" class="headline medium">Projects</a>
-            <a href="./services.html" class="active medium">Services</a>
+        <a class="homeLogo" href="#home"><img src="./project-assets/logos/circle.svg" alt=""></a>
+        <nav><a href="./index.html" class="active headline medium">Home</a>
+            <a class="headline medium" href="./project.html">Projects</a>
+            <a class="headline medium" href="./services.html">Services</a>
         </nav>
-
-        <a href="#about"> <button class="headline button">Contact Us</button></a>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -40,27 +35,27 @@
 
     <section class="form">
         <h1>Contact Us</h1>
-        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <form name="myForm">
             <div class="name">
                 <label class="headline" for="name" name="fname">Full Name *</label>
-                <input class="caption1" type="text" placeholder="Enter your full name" required>
+                <input id="nameInput" class="caption1" type="text" placeholder="Enter your full name" required>
             </div>
             
             <div class="optional">
                 <div class="email">
                     <label class="headline" for="email">Email</label>
-                    <input class="caption1" type="text" placeholder="Enter your email address">
+                    <input id="emailInput" class="caption1" type="text" placeholder="Enter your email address">
                 </div>
                 <div class="phone">
                     <label class="headline" for="phone">Phone</label>
-                    <input class="caption1" type="text" placeholder="Enter your phone number">
+                    <input id="phoneInput" class="caption1" type="text" placeholder="Enter your phone number">
                 </div>
             </div>
             <div class="message">
                 <label class="headline" for="message">Message</label>
-                <textarea class="caption1" name="message" placeholder="Write your message here ...."></textarea>
+                <textarea id="messageInput" class="caption1" name="message" placeholder="Write your message here ...."></textarea>
             </div>
-            <input class="submit" type="submit" value="Submit">
+            <input id="boto" class="submit" type="submit" value="Submit">
 
         </form>
     </section>
@@ -99,7 +94,7 @@
         </div>
 
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="./js/services.js"></script>
 </body>
 
 </html>
