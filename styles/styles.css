@@ -13,10 +13,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1320px;
-    
-
+    margin-bottom: 200px;
+    padding: 0 8%;
+    width: 80vw;
 }
+
 /* responsive */
 @media screen and (max-width: 991px) {
     section {

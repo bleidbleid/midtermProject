@@ -59,6 +59,8 @@ article div {
     margin-bottom: 15px;
 }
 
+
+
 article img {
     width: 100%;
     height: 240px;
@@ -66,6 +68,9 @@ article img {
 
 .descripcionCard {
     height: 150px;
+}
+.learnMore:hover {
+    color: #6B708D;
 }
 
 @media screen and (max-width: 991px) {
